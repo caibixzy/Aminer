@@ -97,7 +97,8 @@ UBUNTU_DOWNLOAD(){
   esac
   INFO "Device architecture :- $ARCHITECTURE"
   INFO "Downloading Ubuntu image"
-  wget https://mirrors.ustc.edu.cn/ubuntu-cdimage/ubuntu-base/releases/${UBUNTU_VERSION}/release/ubuntu-base-${UBUNTU_VERSION}-base-${ARCHITECTURE}.tar.gz -O ubuntu.tar.gz
+  #wget https://mirrors.ustc.edu.cn/ubuntu-cdimage/ubuntu-base/releases/${UBUNTU_VERSION}/release/ubuntu-base-${UBUNTU_VERSION}-base-${ARCHITECTURE}.tar.gz -O ubuntu.tar.gz
+  wget http://cdimage.ubuntu.com/ubuntu-base/releases/${UBUNTU_VERSION}/release/ubuntu-base-${UBUNTU_VERSION}-base-${ARCHITECTURE}.tar.gz -O ubuntu.tar.gz
 }
 
 UBUNTU_INSTALL(){
